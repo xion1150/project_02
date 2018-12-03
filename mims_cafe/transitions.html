@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transitions</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 120%;
+            color: blue;
+            transition: font-size 2s ease-out 1s,
+            color 2s ease-in 1s;
+        }
+
+        h1:hover {
+            cursor: pointer;
+            font-size: 180%;
+            color: violet;
+        }
+
+        button {
+            width: 200px;
+            height: 100px;
+            color: white;
+            background-color: black;
+            transition: font-size 3s ease-out 2s,
+            color 2s ease-in 1s,
+            background-color 2s ease-in 1s;
+        }
+
+        button:hover {
+            cursor: pointer;
+            font-size: 200%;
+            color: deeppink;
+            background-color: aqua;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            transition: width 4s, height 4s;
+        }
+
+        .box:hover {
+            width: 300px;
+        }
+
+        .circle {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            border-radius: 150px;
+            transition: width 1s, height 4s;
+        }
+
+        .circle:hover {
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+        }
+
+    </style>
+
+
+</head>
+<body>
+<h1>Hover over this heading to see its transition</h1>
+<button>ABOUT</button> <!--button is its own element-->
+<div class="box"></div>
+<div class="circle"></div>
+
+
+
+
+</body>
+</html>
